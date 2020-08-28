@@ -1,0 +1,26 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$primary: mat-palette($mat-indigo);
+$accent: mat-palette($mat-pink);
+$theme: mat-light-theme($primary, $accent);
+
+$primary100: mat-color($primary, 100);
+$primary200: mat-color($primary, 200);
+$primary300: mat-color($primary, 300);
+$primary400: mat-color($primary, 400);
+$primary500: mat-color($primary, 500); // 500 is default
+$primary600: mat-color($primary, 600);
+$primary700: mat-color($primary, 700);
+$primary800: mat-color($primary, 800);
+$primary900: mat-color($primary, 900);
+
+$accent100: mat-color($accent, 100);
+$accent200: mat-color($accent, 200);
+$accent300: mat-color($accent, 300);
+$accent400: mat-color($accent, 400);
+$accent500: mat-color($accent, 500); // 500 is default
+$accent600: mat-color($accent, 600);
+$accent700: mat-color($accent, 700);
+$accent800: mat-color($accent, 800);
+$accent900: mat-color($accent, 900);
