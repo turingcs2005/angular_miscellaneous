@@ -10,9 +10,5 @@
 
 <mat-menu #mainMenu="matMenu">
   <button mat-menu-item [routerLink]="['/']"><mat-icon>home</mat-icon></button>
-  <button mat-menu-item
-  *ngFor="let x of menu1"
-  [routerLink]="['/', x.path]"
-  >{{x.name}}</button>
   <button mat-menu-item [routerLink]="['/help']"><mat-icon>help</mat-icon></button>
 </mat-menu>
