@@ -1,8 +1,12 @@
 <mat-toolbar color="primary">
-  <mat-icon [matMenuTriggerFor]="mainMenu">menu</mat-icon>
-  <div>{{ title }}</div>
   <div>
     <mat-icon [routerLink]="['/']">home</mat-icon>&nbsp;
+    <mat-icon [matMenuTriggerFor]="mainMenu">menu</mat-icon>
+  </div>
+
+  <div>{{ title }}</div>
+
+  <div>
     <mat-icon [routerLink]="['/help']">help</mat-icon>
   </div>
 
