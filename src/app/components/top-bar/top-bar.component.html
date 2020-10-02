@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
   <div>
+    <mat-icon [matMenuTriggerFor]="mainMenu">menu</mat-icon>&nbsp;
     <mat-icon [routerLink]="['/']">home</mat-icon>&nbsp;
-    <mat-icon [matMenuTriggerFor]="mainMenu">menu</mat-icon>
   </div>
 
   <div>{{ title }}</div>
@@ -14,5 +14,6 @@
 
 <mat-menu #mainMenu="matMenu">
   <button mat-menu-item [routerLink]="['/']"><mat-icon>home</mat-icon></button>
+  <button mat-menu-item [routerLink]="['/star-rating']">star rating</button>
   <button mat-menu-item [routerLink]="['/help']"><mat-icon>help</mat-icon></button>
 </mat-menu>

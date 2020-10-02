@@ -5,7 +5,8 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'help', component: HelpComponent }
+  { path: 'help', component: HelpComponent },
+  { path: 'star-rating', loadChildren: () => import('./modules/star-rating/star-rating.module').then(m => m.StarRatingModule) }
 ];
 
 @NgModule({
