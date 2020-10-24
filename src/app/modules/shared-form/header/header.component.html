@@ -1,0 +1,17 @@
+<div [formGroup]="parentGroup">
+
+    <div formGroupName="header">
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Your name" formControlName="name">
+        </mat-form-field> &nbsp; &nbsp;
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Date of request</mat-label>
+            <input matInput [matDatepicker]="picker1" formControlName="DoR">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field> &nbsp; &nbsp;
+    </div>
+
+</div>

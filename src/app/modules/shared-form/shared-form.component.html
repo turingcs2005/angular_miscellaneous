@@ -1,0 +1,35 @@
+<div class="mat-h2">Shared form group</div>
+
+<form (ngSubmit)="onSubmit1()">
+    <!-- Shared header -->
+    <app-header [header]="form1.get('header')" [parentGroup]="form1"></app-header>
+
+    <!-- Non-shared -->
+    <div [formGroup]="form1">
+        <mat-form-field appearance="outline">
+            <mat-label>Your hobby</mat-label>
+            <input matInput placeholder="Your hobby" formControlName="hobby">
+        </mat-form-field>
+        &nbsp; &nbsp;
+        <button type="submit" mat-raised-button color="accent"><mat-icon>save</mat-icon></button> 
+    </div>
+</form>
+
+<mat-divider></mat-divider>
+<br>
+
+<form (ngSubmit)="onSubmit2()">
+    <!-- Shared header -->
+    <app-header [header]="form2.get('header')" [parentGroup]="form2"></app-header>
+
+    <!-- Non-shared -->
+    <div [formGroup]="form2">
+        <mat-form-field appearance="outline">
+            <mat-label>Your spouse</mat-label>
+            <input matInput placeholder="Your spouse" formControlName="spouse">
+        </mat-form-field>
+        &nbsp; &nbsp;
+        <button type="submit" mat-raised-button color="accent"><mat-icon>save</mat-icon></button> 
+    </div>
+</form>
+
