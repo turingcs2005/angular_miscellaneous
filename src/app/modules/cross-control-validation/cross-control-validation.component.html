@@ -1,0 +1,16 @@
+<div class="mat-h2">Cross-control validation</div>
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+        <mat-label>First name</mat-label>
+        <input matInput placeholder="First name" formControlName="firstName">
+    </mat-form-field>&nbsp; &nbsp;
+
+    <mat-form-field appearance="outline">
+        <mat-label>Last name</mat-label>
+        <input matInput placeholder="Last name" formControlName="lastName">
+    </mat-form-field> &nbsp;
+
+    <button mat-raised-button color="accent" type="submit" [disabled]="myForm.invalid"><mat-icon>save</mat-icon></button>
+
+</form>
