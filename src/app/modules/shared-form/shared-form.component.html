@@ -1,5 +1,9 @@
 <div class="mat-h2">Shared form group</div>
 
+<p>Multiple reactive forms share the same header. Create a separate component 'header', and embed the header in each of the reactive forms. 
+    Form Controls for this shared header can be injected as a service. This way you don't have to duplicate the header for every form.
+</p>
+
 <form (ngSubmit)="onSubmit1()">
     <!-- Shared header -->
     <app-header [header]="form1.get('header')" [parentGroup]="form1"></app-header>

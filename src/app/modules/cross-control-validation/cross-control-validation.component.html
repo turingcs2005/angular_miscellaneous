@@ -1,5 +1,8 @@
 <div class="mat-h2">Cross-control validation</div>
 
+<p>Cross control validators can be injected via a service or imported from a .ts file. Use form group (upon which cross-control validation is 
+    implemented) as argument. In the example below, if first name is 'Claire', last name has to be 'Wang' or the form is invalid.</p>
+
 <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
     <mat-form-field appearance="outline">
         <mat-label>First name</mat-label>
