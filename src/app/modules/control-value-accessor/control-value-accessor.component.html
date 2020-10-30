@@ -1,0 +1,37 @@
+<div class="mat-h2">Control value accessor</div>
+<p>Control-value-accessor interface connects a custom component to a form control.</p>
+<mat-divider></mat-divider><br>
+
+<p>A component that serves as a custom form control</p>
+<app-star-rating></app-star-rating>
+<mat-divider></mat-divider><br>
+
+<p>A custom form group</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmitMyForm()">
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>&nbsp; &nbsp;
+
+    <mat-form-field appearance="outline">
+        <mat-label>Rating</mat-label>
+        <input matInput placeholder="Rating" formControlName="stars">
+    </mat-form-field>
+
+    <br>
+    <button mat-raised-button color="accent" type="submit" [disabled]="!myForm.valid">Submit</button>
+</form>
+
+<br><mat-divider></mat-divider><br>
+
+<form [formGroup]="starForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="name">
+    </mat-form-field>&nbsp; &nbsp;
+
+    <app-star-rating formControlName="stars"></app-star-rating>
+
+    <br>
+    <button mat-raised-button color="accent" (click)="onSubmitStarForm()" [disabled]="!starForm.valid">Submit</button>
+</form>

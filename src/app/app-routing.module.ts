@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'help', component: HelpComponent },
   { path: 'star-rating', loadChildren: () => import('./modules/star-rating/star-rating.module').then(m => m.StarRatingModule) },
   { path: 'shared-form', loadChildren: () => import('./modules/shared-form/shared-form.module').then(m => m.SharedFormModule) },
-  { path: 'cross-control-validation', loadChildren: () => import('./modules/cross-control-validation/cross-control-validation.module').then(m => m.CrossControlValidationModule) }
+  { path: 'cross-control-validation', loadChildren: () => import('./modules/cross-control-validation/cross-control-validation.module').then(m => m.CrossControlValidationModule) },
+  { path: 'control-value-accessor', loadChildren: () => import('./modules/control-value-accessor/control-value-accessor.module').then(m => m.ControlValueAccessorModule) }
 ];
 
 @NgModule({
