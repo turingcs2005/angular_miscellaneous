@@ -8,6 +8,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   padding: 20px;
 }
 
+.round-border {
+  border-radius: 5px;
+}
+
 .snack-bar {
   background-color: $primary500;
   color: white;

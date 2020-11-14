@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'content-projection', loadChildren: () => import('./modules/content-projection/content-projection.module').then(m => m.ContentProjectionModule) },
   { path: 'font-awesome', loadChildren: () => import('./modules/font-awesome/font-awesome.module').then(m => m.FontAwesomeModule) },
   { path: 'nested-directives', loadChildren: () => import('./modules/nested-directives/nested-directives.module').then(m => m.NestedDirectivesModule) },
+  { path: 'dynamic', loadChildren: () => import('./modules/dynamic/dynamic.module').then(m => m.DynamicModule) },
 ];
 
 @NgModule({
